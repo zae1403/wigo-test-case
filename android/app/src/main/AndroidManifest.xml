@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.wigo_test_case">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="Wigo Test Case"
         android:name="${applicationName}"
