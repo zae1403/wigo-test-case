@@ -15,7 +15,7 @@ class AuthRepository implements IAuthRepository {
   final IAuthLocalDataSource localDataSource;
   final IProfileLocalDataSource profileLocalDataSource;
 
-  AuthRepository(
+  const AuthRepository(
     this.remoteDataSource,
     this.localDataSource,
     this.profileLocalDataSource,

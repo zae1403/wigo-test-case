@@ -11,7 +11,7 @@ abstract class IAuthRemoteDataSource {
 class AuthRemoteDataSource implements IAuthRemoteDataSource {
   final Dio _client;
 
-  AuthRemoteDataSource(this._client);
+  const AuthRemoteDataSource(this._client);
   @override
   @override
   Future<LoginResponse> loginWithEmailAndPassword(

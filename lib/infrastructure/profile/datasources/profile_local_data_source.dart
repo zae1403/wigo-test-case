@@ -13,7 +13,7 @@ class HiveProfileLocalDataSource implements IProfileLocalDataSource {
   static const String profileBox = 'profile-box';
   static const String _profileKey = 'profile_key';
 
-  HiveProfileLocalDataSource(this._hive);
+  const HiveProfileLocalDataSource(this._hive);
 
   final HiveInterface _hive;
 
