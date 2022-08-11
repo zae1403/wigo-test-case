@@ -6,12 +6,12 @@ import '../profile/datasources/profile_local_data_source.dart';
 Future<void> initHiveStorage() async {
   await Hive.initFlutter();
   _registerHiveAdapter();
-  await _initHiveBox();
+  await initHiveBox();
 }
 
 void _registerHiveAdapter() {}
 
-Future<void> _initHiveBox() async {
+Future<void> initHiveBox() async {
   await Hive.openBox(HiveAuthLocalDataSource.authBox);
   await Hive.openBox(HiveProfileLocalDataSource.profileBox);
 }

@@ -17,7 +17,7 @@ abstract class IAuthLocalDataSource {
 }
 
 class HiveAuthLocalDataSource implements IAuthLocalDataSource {
-  HiveAuthLocalDataSource(this._hive);
+  const HiveAuthLocalDataSource(this._hive);
 
   final HiveInterface _hive;
 
@@ -55,7 +55,7 @@ class HiveAuthLocalDataSource implements IAuthLocalDataSource {
       await _hive.deleteBoxFromDisk(authBox);
       await _hive.deleteBoxFromDisk(HiveProfileLocalDataSource.profileBox);
 
-      await initHiveStorage();
+      await initHiveBox();
     } catch (e) {
       rethrow;
     }
