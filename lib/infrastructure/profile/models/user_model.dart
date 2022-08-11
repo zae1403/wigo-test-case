@@ -28,10 +28,10 @@ class UserModel {
   final String name;
   final String? phoneNumber;
   final String username;
-  final int? gender;
+  final dynamic gender;
   final DateTime dateOfBirth;
   final String image;
-  final int? userAdmin;
+  final dynamic userAdmin;
 
   factory UserModel.fromJson(Map<String, dynamic> json) =>
       _$UserModelFromJson(json);

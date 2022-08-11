@@ -14,10 +14,10 @@ UserModel _$UserModelFromJson(Map<String, dynamic> json) => UserModel(
       name: json['name'] as String,
       phoneNumber: json['phone_number'] as String?,
       username: json['username'] as String,
-      gender: json['gender'] as int?,
+      gender: json['gender'],
       dateOfBirth: DateTime.parse(json['date_of_birth'] as String),
       image: json['image'] as String,
-      userAdmin: json['user_admin'] as int?,
+      userAdmin: json['user_admin'],
     );
 
 Map<String, dynamic> _$UserModelToJson(UserModel instance) => <String, dynamic>{

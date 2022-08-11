@@ -21,7 +21,7 @@ mixin _$User {
   DateTime get updatedAt => throw _privateConstructorUsedError;
   String get email => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
-  dynamic get phoneNumber => throw _privateConstructorUsedError;
+  String? get phoneNumber => throw _privateConstructorUsedError;
   String get username => throw _privateConstructorUsedError;
   dynamic get gender => throw _privateConstructorUsedError;
   DateTime get dateOfBirth => throw _privateConstructorUsedError;
@@ -42,7 +42,7 @@ abstract class $UserCopyWith<$Res> {
       DateTime updatedAt,
       String email,
       String name,
-      dynamic phoneNumber,
+      String? phoneNumber,
       String username,
       dynamic gender,
       DateTime dateOfBirth,
@@ -96,7 +96,7 @@ class _$UserCopyWithImpl<$Res> implements $UserCopyWith<$Res> {
       phoneNumber: phoneNumber == freezed
           ? _value.phoneNumber
           : phoneNumber // ignore: cast_nullable_to_non_nullable
-              as dynamic,
+              as String?,
       username: username == freezed
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
@@ -132,7 +132,7 @@ abstract class _$$_UserCopyWith<$Res> implements $UserCopyWith<$Res> {
       DateTime updatedAt,
       String email,
       String name,
-      dynamic phoneNumber,
+      String? phoneNumber,
       String username,
       dynamic gender,
       DateTime dateOfBirth,
@@ -187,7 +187,7 @@ class __$$_UserCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res>
       phoneNumber: phoneNumber == freezed
           ? _value.phoneNumber
           : phoneNumber // ignore: cast_nullable_to_non_nullable
-              as dynamic,
+              as String?,
       username: username == freezed
           ? _value.username
           : username // ignore: cast_nullable_to_non_nullable
@@ -239,7 +239,7 @@ class _$_User implements _User {
   @override
   final String name;
   @override
-  final dynamic phoneNumber;
+  final String? phoneNumber;
   @override
   final String username;
   @override
@@ -304,7 +304,7 @@ abstract class _User implements User {
       required final DateTime updatedAt,
       required final String email,
       required final String name,
-      required final dynamic phoneNumber,
+      required final String? phoneNumber,
       required final String username,
       required final dynamic gender,
       required final DateTime dateOfBirth,
@@ -322,7 +322,7 @@ abstract class _User implements User {
   @override
   String get name;
   @override
-  dynamic get phoneNumber;
+  String? get phoneNumber;
   @override
   String get username;
   @override

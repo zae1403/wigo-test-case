@@ -10,7 +10,7 @@ abstract class User with _$User {
     required DateTime updatedAt,
     required String email,
     required String name,
-    required dynamic phoneNumber,
+    required String? phoneNumber,
     required String username,
     required dynamic gender,
     required DateTime dateOfBirth,
