@@ -21,6 +21,7 @@ class ProfileBloc extends Bloc<ProfileEvent, ProfileState> {
 
   void _onProfileFetched(
       ProfileFetched event, Emitter<ProfileState> emit) async {
+    emit(const ProfileState.loading());
     var response = await _getProfile(const NoParams());
 
     emit(response.fold(
